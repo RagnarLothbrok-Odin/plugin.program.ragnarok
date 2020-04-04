@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.openwizard" name="[COLOR limegreen][B]Open[/B][/COLOR]Wizard" version="1.3.4" provider-name="drinfernoo">
+<addon id="plugin.program.ragnarok" name="[B][COLOR crimson]Ragnarok[/B][/COLOR] Wizard" version="3.0" provider-name="odin">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="script.module.requests" />
@@ -13,11 +13,11 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
     
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR limegreen][B]Open[/B][/COLOR]Wizard</summary>
-        <description lang="en">[COLOR limegreen][B]Open[/B][/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <summary lang="en">[B][COLOR crimson]Ragnarok[/B][/COLOR] Wizard</summary>
+        <description lang="en">[B][COLOR crimson]Ragnarok[/B][/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://www.github.com/drinfernoo/plugin.program.openwizard/</source>
+        <source>https://github.com/RagnarLothbrok-Odin/plugin.program.ragnarok/</source>
         <news>
 1.3.4
  - Fix bad indent

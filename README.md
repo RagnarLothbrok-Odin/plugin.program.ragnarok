@@ -1,7 +1,9 @@
-# plugin.program.openwizard
-OpenWizard
+# plugin.program.ragnarok
+Ragnarok Wizard
 
-OpenWizard was created to help the Kodi community out and help get rid of the broken personal wizards that are floating around. As this is a work in progress, a repository is highly recommended, but if you prefer not to, there is a built-in auto-updater.
+Ragnarok Wizard was created to help the Kodi community out and help get rid of the broken personal wizards that are floating around. As this is a work in progress, I would highly recommend the use of a repository, but if you prefer not to, there is a built-in auto-updater.
+
+NOTE: This is a fork of https://github.com/drinfernoo/plugin.program.openwizard
 
 For more information on how to edit/customize this wizard for your own usage, please read [the wiki](https://github.com/drinfernoo/plugin.program.openwizard/wiki).
 
