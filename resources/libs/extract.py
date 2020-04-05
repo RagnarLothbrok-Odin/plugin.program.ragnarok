@@ -73,12 +73,12 @@ def all_with_progress(_in, _out, dp, ignore, title):
     for item in zin.infolist():
         
         try:
-            str(item.filename).encode('ascii')
+            item.filename = str(item.filename).encode('utf-8')
         except UnicodeDecodeError:
-            logging.log("[ASCII Check] Illegal character found in file: {0}".format(item.filename))
+            logging.log("[ASCII Check] Illegal character found in file: {0}".format(item.filename.encode('utf-8')))
             continue
         except UnicodeEncodeError:
-            logging.log("[ASCII Check] Illegal character found in file: {0}".format(item.filename))
+            logging.log("[ASCII Check] Illegal character found in file: {0}".format(item.filename.encode('utf-8')))
             continue
             
         count += 1
