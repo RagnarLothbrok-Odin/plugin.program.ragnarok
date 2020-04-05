@@ -96,11 +96,11 @@ AUTOUPDATE = 'Yes'
 # Enable Auto Install 'Yes' or 'No'
 AUTOINSTALL = 'Yes'
 # Addon ID for the repository
-REPOID = 'repository.odin'
+REPOID = 'repository.ragnarokwizard'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
-REPOADDONXML = 'https://raw.githubusercontent.com/ragnarlothbrok-odin/repository.odin/master/zips/addons.xml'
+REPOADDONXML = 'https://raw.githubusercontent.com/RagnarLothbrok-Odin/repository.ragnarokwizard/master/zips/addons.xml'
 # Url to folder zip is located in
-REPOZIPURL = 'https://raw.githubusercontent.com/ragnarlothbrok-odin/repository.odin/master/zips/repository.odin/'
+REPOZIPURL = 'https://raw.githubusercontent.com/RagnarLothbrok-Odin/repository.ragnarokwizard/master/zips/repository.ragnarokwizard/'
 #########################################################
 
 #########################################################
