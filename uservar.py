@@ -14,7 +14,7 @@ ART = os.path.join(PATH, 'resources', 'media')
 #        User Edit Variables                            #
 #########################################################
 ADDONTITLE = '[B][COLOR crimson]Ragnarok[/COLOR][/B] Wizard'
-BUILDERNAME = 'Odin'
+BUILDERNAME = 'RagnarLothbrok'
 EXCLUDES = [ADDON_ID, 'repository.odin']
 # Text File with build info in it.
 BUILDFILE = 'https://raw.githubusercontent.com/ragnarlothbrok-odin/Wizard/master/builds.txt'
