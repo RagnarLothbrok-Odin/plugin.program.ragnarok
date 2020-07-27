@@ -1,4 +1,7 @@
 # plugin.program.ragnarok
+
+# THIS PROJECT IS NO LONGER IN DEVELOPMENT.
+
 Ragnarok Wizard
 
 Ragnarok Wizard was created to help the Kodi community out and help get rid of the broken personal wizards that are floating around. As this is a work in progress, I would highly recommend the use of a repository, but if you prefer not to, there is a built-in auto-updater.
