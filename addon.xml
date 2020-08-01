@@ -20,6 +20,8 @@
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://github.com/RagnarLothbrok-Odin/plugin.program.ragnarok/</source>
         <news>
+1.4.4
+ - More specific paths
 1.4.3
  - Fix missing artwork on items (thanks @xulek)
 1.4.2
