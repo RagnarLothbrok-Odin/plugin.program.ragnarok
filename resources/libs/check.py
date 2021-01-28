@@ -45,12 +45,8 @@ def check_paths():
     path = os.path.split(CONFIG.ADDON_PATH)
     if not CONFIG.ADDON_ID == path[1]:
         dialog.ok(CONFIG.ADDONTITLE,
-                      '[COLOR {0}]Please make sure that the plugin folder is the same as the add-on id.[/COLOR]'.format(
-                          CONFIG.COLOR2),
-                      '[COLOR {0}]Plugin ID:[/COLOR] [COLOR {1}]{2}[/COLOR]'.format(CONFIG.COLOR2, CONFIG.COLOR1,
-                                                                                    CONFIG.ADDON_ID),
-                      '[COLOR {0}]Plugin Folder:[/COLOR] [COLOR {1}]{2}[/COLOR]'.format(CONFIG.COLOR2, CONFIG.COLOR1,
-                                                                                        path))
+                      '[COLOR {0}]Please make sure that the plugin folder is the same as the add-on id.[/COLOR]\n[COLOR {0}]Plugin ID:[/COLOR] [COLOR {1}]{2}[/COLOR]\n[COLOR {0}]Plugin Folder:[/COLOR] [COLOR {1}]{3}[/COLOR]'.format(CONFIG.COLOR2, CONFIG.COLOR1, CONFIG.ADDON_ID, path))
+
         logging.log("[Path Check] ADDON_ID and plugin folder doesnt match. {0} / {1} ".format(CONFIG.ADDON_ID, path))
     else:
         logging.log("[Path Check] Good!")
