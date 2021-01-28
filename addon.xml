@@ -14,8 +14,8 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
     
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[B][COLOR crimson]Ragnarok[/B][/COLOR] Wizard</summary>
-        <description lang="en">[B][COLOR crimson]Ragnarok[/B][/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <summary lang="en_GB">[B][COLOR crimson]Ragnarok[/B][/COLOR] Wizard</summary>
+        <description lang="en_GB">[B][COLOR crimson]Ragnarok[/B][/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://github.com/RagnarLothbrok-Odin/plugin.program.ragnarok/</source>
