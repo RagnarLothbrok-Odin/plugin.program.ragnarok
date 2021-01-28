@@ -18,6 +18,7 @@
 ################################################################################
 
 import xbmc
+import xbmcvfs
 import xbmcgui
 
 import os
@@ -362,7 +363,7 @@ class AddonMenu:
                       '[COLOR {0}][B]Downloading:[/B][/COLOR] [COLOR {1}]{2}[/COLOR]'.format(CONFIG.COLOR2, CONFIG.COLOR1, name),
                       '', '[COLOR {0}]Please Wait[/COLOR]'.format(CONFIG.COLOR2))
         urlsplits = url.split('/')
-        lib = xbmc.makeLegalFilename(os.path.join(CONFIG.PACKAGES, urlsplits[-1]))
+        lib = xbmcvfs.makeLegalFilename(os.path.join(CONFIG.PACKAGES, urlsplits[-1]))
         try:
             os.remove(lib)
         except:
@@ -406,7 +407,7 @@ class AddonMenu:
                       '', '[COLOR {0}]Please Wait[/COLOR]'.format(CONFIG.COLOR2))
 
         urlsplits = url.split('/')
-        lib = xbmc.makeLegalFilename(os.path.join(CONFIG.PACKAGES, urlsplits[-1]))
+        lib = xbmcvfs.makeLegalFilename(os.path.join(CONFIG.PACKAGES, urlsplits[-1]))
         try:
             os.remove(lib)
         except:

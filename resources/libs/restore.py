@@ -119,7 +119,7 @@ class Restore:
                 self.progress_dialog.update(0, '[COLOR {0}]Unable to read zip file from current location.'.format(
                     CONFIG.COLOR2), 'Copying file to packages')
                 xbmcvfs.copy(file, packages)
-                file = xbmc.translatePath(packages)
+                file = xbmcvfs.translatePath(packages)
                 self.progress_dialog.update(0, '', 'Copying file to packages: Complete')
                 zipfile.ZipFile(file, 'r', allowZip64=True)
         else:

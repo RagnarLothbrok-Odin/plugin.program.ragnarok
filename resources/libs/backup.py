@@ -136,7 +136,7 @@ class Backup:
             tempzipname = ''
             zipname = os.path.join(CONFIG.MYBUILDS, name)
             try:
-                zipf = zipfile.ZipFile(xbmc.translatePath(zipname), mode='w', allowZip64=True)
+                zipf = zipfile.ZipFile(xbmcvfs.translatePath(zipname), mode='w', allowZip64=True)
             except:
                 try:
                     tempzipname = os.path.join(CONFIG.PACKAGES, '{0}.zip'.format(name))
@@ -255,7 +255,7 @@ class Backup:
             tools.convert_special(CONFIG.HOME, True)
             extractsize = 0
             try:
-                zipf = zipfile.ZipFile(xbmc.translatePath(zipname), mode='w', allowZip64=True)
+                zipf = zipfile.ZipFile(xbmcvfs.translatePath(zipname), mode='w', allowZip64=True)
             except:
                 try:
                     tempzipname = os.path.join(CONFIG.PACKAGES, '{0}.zip'.format(name))
@@ -462,10 +462,10 @@ class Backup:
         temp_txt = os.path.join(CONFIG.PACKAGES, txtname)
         info_txt = os.path.join(backup_path, txtname)
         
-        _skin_root = xbmc.translatePath('special://skin/')
+        _skin_root = xbmcvfs.translatePath('special://skin/')
         _skin_id = os.path.basename(os.path.normpath(_skin_root))
         _skin = xbmcaddon.Addon(_skin_id)
-        _skin_name = xbmc.translatePath(_skin.getAddonInfo('name'))
+        _skin_name = xbmcvfs.translatePath(_skin.getAddonInfo('name'))
 
         with open(temp_txt, 'w') as f:
             f.write('name="{0}"\n'.format(name))
@@ -801,7 +801,7 @@ class Backup:
             tempzipname = ''
             zipname = os.path.join(CONFIG.MYBUILDS, name)
             try:
-                zipf = zipfile.ZipFile(xbmc.translatePath(zipname), mode='w', allowZip64=True)
+                zipf = zipfile.ZipFile(xbmcvfs.translatePath(zipname), mode='w', allowZip64=True)
             except:
                 try:
                     tempzipname = os.path.join(CONFIG.PACKAGES, '{0}.zip'.format(name))
