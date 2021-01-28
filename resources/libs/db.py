@@ -517,7 +517,7 @@ def find_binary_addons(addon='all'):
         xml = os.path.join(CONFIG.ADDONS, addon, 'addon.xml')
         
         if os.path.exists(xml):
-            logging.log('Checking {0}'.format(xml), level=xbmc.LOGNOTICE)
+            logging.log('Checking {0}'.format(xml), level=xbmc.LOGINFO)
             root = ElementTree.parse(xml).getroot()
             addonid = root.get('id')
             addonname = root.get('name')

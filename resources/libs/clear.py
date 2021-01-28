@@ -320,10 +320,10 @@ def clear_cache(over=None):
                             shutil.rmtree(os.path.join(root, d))
                             delfiles += 1
                             logging.log("[Success] cleared {0} files from {1}".format(str(file_count), os.path.join(item, d)),
-                                        level=xbmc.LOGNOTICE)
+                                        level=xbmc.LOGINFO)
                         except:
                             logging.log("[Failed] to wipe cache in: {0}".format(os.path.join(item, d)),
-                                        level=xbmc.LOGNOTICE)
+                                        level=xbmc.LOGINFO)
         else:
             for root, dirs, files in os.walk(item):
                 dirs[:] = [d for d in dirs if d not in excludes]
