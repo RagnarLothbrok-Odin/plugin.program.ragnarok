@@ -62,7 +62,7 @@ def auto_install_repo():
                 if repo_response:
                     progress_dialog = xbmcgui.DialogProgress()
                     
-                    progress_dialog.create(CONFIG.ADDONTITLE, 'Downloading Repo...', '', 'Please Wait')
+                    progress_dialog.create(CONFIG.ADDONTITLE, 'Downloading Repo...\n\nPlease Wait')
                     tools.ensure_folders(CONFIG.PACKAGES)
                     lib = os.path.join(CONFIG.PACKAGES, installzip)
 
