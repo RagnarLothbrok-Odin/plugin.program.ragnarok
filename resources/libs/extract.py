@@ -33,7 +33,7 @@ from resources.libs.common import tools
 
 def all(_in, _out, ignore=None, title=None):
     progress_dialog = xbmcgui.DialogProgress()
-    progress_dialog.create(CONFIG.ADDONTITLE, "Extracting Content", '', '')
+    progress_dialog.create(CONFIG.ADDONTITLE, "Extracting Content\n\n")
     
     return all_with_progress(_in, _out, progress_dialog, ignore, title)
 
